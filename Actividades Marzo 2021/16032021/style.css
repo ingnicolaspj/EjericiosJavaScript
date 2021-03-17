@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -----Estilos del reloj--- */
+
+.wrap{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.widget{
+    width: 50%;
+    margin: 2em;
+    margin-left: 25%;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 0.3125rem;
+    width: 100%;
+}
+
+.reloj{
+    font-family: Oswald, Arial;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 4em;
+    padding: 20px;
+    text-align: center;
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}

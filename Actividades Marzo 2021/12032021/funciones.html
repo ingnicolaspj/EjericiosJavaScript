@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    
+
+    <script>
+        //Una función es un porcion de código que se puede llamar las veces que sean y utlizarlas de vuelta
+    
+
+        function factorial(n){
+            
+            let res = 1;
+            for(let i=n; i>=1; i--){
+                res = res * i;
+            }
+            document.write(res);
+            return res;
+        }  
+
+        factorial(5);
+
+        /* function factorial(n=5){
+            if (n<=1) return 1;
+            return n* factorial(n-1);
+            console.log(n);
+        }
+        
+        factorial(5); */
+                
+
+        
+        /* function pedirNumero(){
+            
+            let dato, num;
+
+            dato = prompt("Introduce un número","0");
+            num = parseInt(dato);
+
+            num = num * 2;
+
+            document.write(`El doble es ${num}`);
+
+        }
+
+        pedirNumero();
+        pedirNumero(); */
+
+
+        /* function edad(){
+
+            
+            let pregunta = prompt("¿Esta lloviendo afura?");
+            return "La funión se ejecuto correctamente";
+        }
+
+        let edades = edad();
+        document.write(edades); */
+
+        /* function saludar(){
+            
+            let name1 = prompt("¿Quien eres?");
+            
+            let respuesta = prompt(`¡Hola ${name1} ¿Como fue tu día?`);
+            
+            if(respuesta == "bien"){
+                alert("me alegro");
+            }else{
+                alert("Una pena");
+            }
+        }
+
+        saludar();
+        saludar();
+        saludar(); */
+    </script>
+</body>
+</html>
