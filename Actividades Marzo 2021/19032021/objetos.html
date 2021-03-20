@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+
+
+    <script>
+    //POO es un paradigma para craer soluciones resolviendo los problemas de una mejor forma
+    //Clases: Es una plantilla para poder crar objetos como una fabrica
+    //Atributos: Las propiedades y caracteristicas que tiene nuestro objeto
+    //Metodos: Son las cosas que puede hacer nuestro objeto
+    //Contructor: Es una funcion obligatoria cuando creamos una clase debemos crar un contructor que nos va a contener las propiedades del objeto.
+
+    //Que atributos tiene un animal
+    class animal{
+
+           constructor(especie,edad,color){
+                //this es el objeto que voy a crear
+                //El objeto va a tener una propiedad con this
+                this.especie = especie;
+                this.edad = edad;
+                this.color = color;
+
+                this.info = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+            }
+
+            //Metodo
+            verInfo(){
+                document.write(this.info + "<br>");
+            }
+
+    }
+    //El new nos dice que vamos a instancias o crar un objeto
+    //Decir this es como de perro
+    const perro = new animal("perro",5,"negro");
+    const gato = new animal("gato",2,"cafe");
+    console.log(perro);
+    console.log(gato);
+
+    perro.verInfo();
+    gato.verInfo();
+
+    </script>
+</body>
+</html>
