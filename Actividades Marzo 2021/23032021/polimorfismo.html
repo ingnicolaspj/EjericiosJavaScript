@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polimorfismo</title>
+</head>
+<body>
+    <script>
+    
+    class Animal{
+
+        constructor(especie,edad,color){
+            this.especie = especie;
+            this.edad = edad;
+            this.color = color;
+            this.info = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+        }
+        verInfo(){
+            document.write(this.info + "<br>");
+        }
+        // ladrar(){
+        //     if(this.especie == "perro"){
+        //         document.write("Wow" + "<br>");
+        //     }else
+        //         document.write("No puede ladrar ya que le especie es  " + this.especie +"<br>");
+        // }
+    }
+
+    class Perro extends Animal{
+        constructor(especie,edad,color,raza){
+            super(especie,edad,color);
+            this.raza = raza;
+        }
+        ladrar(){
+            alert("Wow soy de la raza " + this.raza);
+        }
+    }
+    
+    
+    const perro = new Perro("perro", 5, "negro","doberman");
+    const gato = new Perro("gato", 2, "cafe");
+    const perico = new Perro("perico", 3, "verde");
+
+    perro.ladrar();
+    perro.verInfo();
+    gato.ladrar();
+    perico.ladrar();
+    
+    
+    </script>
+</body>
+</html>
