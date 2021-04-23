@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Scroll</title>
+</head>
+<body>
+    
+    <button onclick="myFunction()">Ordenar Alfabeticamente</button>
+    <p id="demo"></p>
+    <!-- <video src="macpro.mp4" id="macpro" controls></video> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        let fruits = ["Banana","Orange","Apple","Mangoo"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myFunction(){
+            fruits.sort();
+            fruits.reverse();
+            document.getElementById("demo").innerHTML = fruits;
+        }
+        
+    </script>
+</body>
+</html>

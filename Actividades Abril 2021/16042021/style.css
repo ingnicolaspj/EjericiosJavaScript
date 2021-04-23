@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:url(https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.myform{
+    display: inline-block;
+    padding: 50px;
+    border: 5px solid rgb(133, 106, 106);
+    text-align: center;
+}
+
+.myform h1{
+    font-family: sans-serif;
+    color: orange;
+    font-size: 3rem;
+    text-shadow: 2px 2px 7px #fff;
+}
+
+.form1{
+    padding: 20px;
+}
+.form1 label{
+    font-size: 2rem;
+    color: red;
+    background: rgb(81, 81, 226);
+}
+.form1 input{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.form1 button{
+    background-color: tomato;
+    border: 2px solid tomato;
+    font-size: 2.5rem;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.form1 button:hover{
+    color: #fff;
+    transition: all .5s;
+    cursor: pointer;
+}

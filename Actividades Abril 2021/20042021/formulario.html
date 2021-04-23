@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloForm.css">  
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div class="formulario">
+        <h1>Producto</h1>
+        <form class="form">
+            <label for="">Nombre: </label>
+            <input type="text" id="name" placeholder="Nombre Producto">
+            <br><br>
+            <label for="">Precio: </label>
+            <input type="number" id="price" placeholder="0">
+            <br><br>
+            <label for="">Cantidad: </label>
+            <input type="number" id="cantidad" placeholder="0">
+            <br><br>
+            <button onclick="calcularPrecio()">Calcular Total</button>
+            <br><br>
+            <label for="">Total: </label>
+            <p id="total"></p>
+            <br><br>
+            
+        </form>
+
+    </div>
+
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>

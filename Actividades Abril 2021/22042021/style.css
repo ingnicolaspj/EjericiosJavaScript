@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: #735454;
+}
+div{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #735454;
+    background: #735454;
+    border-radius: 45px;
+    box-shadow: -14px -14px 29px #4e3939,
+                14px 14px 29px #986f6f;
+    padding: 15px;
+    text-align: justify;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+div:hover{
+    background: #735454;
+    border-radius: 45px;
+    box-shadow: -14px -14px 29px #6dc4b8af,
+                14px 14px 29px #6f8998;
+    cursor:pointer;
+}

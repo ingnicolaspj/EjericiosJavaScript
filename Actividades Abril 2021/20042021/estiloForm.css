@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(to bottom,
+    rgba(66, 112, 238, 0.527),
+    rgba(247, 70, 47, 0.335),
+    rgba(182, 192, 36, 0.45)
+    ),url(https://images.unsplash.com/photo-1618861859575-b6e43d10922a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.formulario{
+    border: 2px solid #fff;
+    padding: 150px;
+}
+
+.formulario h1{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.form input{
+    padding: 8px;
+    width: 70%;
+}
+
+.form button{
+    background-color: red;
+    border: 2px solid red;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form label{
+    font-size: 15px;
+    color: #fff;
+}
