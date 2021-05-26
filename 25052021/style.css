@@ -1,0 +1,9 @@
+.contenedor{
+    background-color: aquamarine;
+    color: #000;
+    padding: 10px;
+}
+
+.contenedor h1{
+    visibility: visible;
+}
